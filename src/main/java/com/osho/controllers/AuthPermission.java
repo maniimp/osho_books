@@ -7,6 +7,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -28,6 +29,9 @@ public class AuthPermission {
 	
 	@Autowired
 	UsersServices userServices;
+	
+	@Autowired
+	UserDetailsService userDetailsService;
 	
 	@Autowired
 	BCryptPasswordEncoder passwordEncoder;

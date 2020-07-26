@@ -9,11 +9,6 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import org.springframework.data.annotation.Reference;
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
  
 @Entity
 @Table(name="shop")
